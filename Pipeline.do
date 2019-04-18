@@ -53,9 +53,14 @@ gtools, upgrade
 
 do path.do, nostop // the directory is indicated in a .dofile copied into each subfolder.
 
-	copy path.do "Final estimates/", replace
-	copy path.do "Life expectancy estimates (appended tables)/", replace
-	copy path.do "Life expectancy estimates (individual tables)/", replace
+	mkdir "Final estimates"
+		copy path.do "Final estimates/", replace
+	
+	mkdir "Life expectancy estimates (appended tables)"
+		copy path.do "Life expectancy estimates (appended tables)/", replace
+	
+	mkdir "Life expectancy estimates (individual tables)"
+		copy path.do "Life expectancy estimates (individual tables)/", replace
 *----------------------------------------------------------------------------------*
 
    
