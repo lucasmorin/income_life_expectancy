@@ -1,17 +1,17 @@
-************************************************************************************
-****      Life expectancy and income among older adults in Sweden 2005-2015     ****
-************************************************************************************
+**************************************************************************************
+****      INCOME AND LIFE EXPECTANCY AMONG OLDER ADULTS IN SWEDEN (2005-2015)     ****
+**************************************************************************************
 
-
+*----------------------------------------------------------------------------------* 
 * Program Setup
 
 	version 14 // set Stata version
 	set more off // disable "more" output
 	clear all // clear memory
 	log close _all
-	timer clear
 	local datelog : di %tdDD-NN-CCYY date(c(current_date),"DMY")
 	log using income_LE_`datelog'.txt, replace text // create log
+*----------------------------------------------------------------------------------* 
 	
 
 *----------------------------------------------------------------------------------* 
@@ -20,18 +20,18 @@
 * Author: Lucas Morin, Karolinska Institutet (lucas.morin@ki.se)
 * Co-investigators: Stefan Fors (KI) and Jonas Wastesson (KI)
 * Date creation : 21 February 2018
-* Extensive updates on 28 May and 21 August 2018
-* Last update 17 April 2019
+* Extensive updates on 28 May 2018, 21 August 2018, and 31 January 2019
+* Last update 18 April 2019
 *----------------------------------------------------------------------------------*  
 
 
 *----------------------------------------------------------------------------------* 
-* Information about the full dataset
+* Information about the dataset used for the study
 * 
-* File: dataset.dta
-* Date of the file (last modification): 28 Feb 2018 at 18:24
+* Name of the file: dataset.dta
+* Date of llast modification: 28 Feb 2018 at 18:24
 * Size: 2.62 GB
-* Variables: 39
+* Number of variables: 39
 * Number of observations: 20,037,836
 * Number of distinct individuals: 2 738 170
 * Contributing time from 'date_entry' to 'date_exit': 18 968 654.8 person-years
@@ -41,31 +41,31 @@
 
 *----------------------------------------------------------------------------------*
 * Install the packages necessary for this syntax
-net from http://www.stata.com/stb/stb59/
-net install ssa14.pkg
+	net from http://www.stata.com/stb/stb59/
+	net install ssa14.pkg
 
-net from http://fmwww.bc.edu/RePEc/bocode/g
-net install gtools
-gtools, upgrade
+	net from http://fmwww.bc.edu/RePEc/bocode/g
+	net install gtools
+		gtools, upgrade
 
 *----------------------------------------------------------------------------------*
-* Define the directory and copy-paste the information in the different folders
+* Define the main directory, create subfolder and copy-paste the path
 
 do path.do, nostop // the directory is indicated in a .dofile copied into each subfolder.
 
-	mkdir "Final estimates"
-		copy path.do "Final estimates/", replace
+ mkdir "Final estimates"
+   copy path.do "Final estimates/", replace
 	
-	mkdir "Life expectancy estimates (appended tables)"
-		copy path.do "Life expectancy estimates (appended tables)/", replace
+ mkdir "Life expectancy estimates (appended tables)"
+   copy path.do "Life expectancy estimates (appended tables)/", replace
 	
-	mkdir "Life expectancy estimates (individual tables)"
-		copy path.do "Life expectancy estimates (individual tables)/", replace
+ mkdir "Life expectancy estimates (individual tables)"
+   copy path.do "Life expectancy estimates (individual tables)/", replace
 *----------------------------------------------------------------------------------*
 
    
 ****************************************************************
-*** Part 1 - Calculate life expectancy by quartile of income ***
+*** Part 1 - CALCULATE LIFE EXPECTANCY BY QUARTILE OF INCOME ***
 ****************************************************************
 
 * Choose the different variables and split the file by year
@@ -321,7 +321,7 @@ do path.do, nostop
   
 
 ****************************************************************
-*** Part 2 -  Calculate life expectancy by decile of income  ***
+*** Part 2 -  CALCULATE LIFE EXPECTANCY BY DECILE OF INCOME  ***
 ****************************************************************
 
 * Choose the different variables and split the file by year (see part 1 for explanations about the setup)
@@ -492,7 +492,7 @@ do path.do, nostop
 
 
 ****************************************************************
-*** Part 3 - Sensitivity and post-hoc analyses               ***
+*** Part 3 - SENSITIVITY AND POST-HOC ANALYSES               ***
 ****************************************************************
 
 *------------------------------------------------------------* 
@@ -1212,7 +1212,7 @@ do path.do, nostop
 
 
 ****************************************************************
-*** Part 4 - Life expectancy by level of education           ***
+*** Part 4 -   LIFE EXPECTANCY BY LEVEL OF EDUCATION         ***
 ****************************************************************
 
 *------------------------------------------------------------* 
