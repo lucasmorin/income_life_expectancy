@@ -18,7 +18,7 @@ Life expectancy estimates are calculated according to 3 types of analyses:
 
 ## Replication of the results
 ### Syntax
-This code is written in Stata. It has been tested in Stata 13, Stata 14 and Stata 15.
+This code is written in Stata. It has been tested in Stata 14 and Stata 15.
 ### Availability of the data
 The individual-level data that we used for our own study cannot be made publicly available for legal and ethical reasons. We are only authorised to share aggregated results. However, we provide a mock data file ([```dataset.dta```](https://github.com/lucasmorin/income_life_expectancy/blob/master/dataset.dta)) that you can download to see how the data should be structured.
 ### Running the code
@@ -29,7 +29,7 @@ The individual-level data that we used for our own study cannot be made publicly
 **Step 3.** Run the file [```Pipeline.do```](https://github.com/lucasmorin/income_life_expectancy/blob/master/Pipeline.do). Please keep in mind that, depending on the size of your main dataset, the data generation process can take a long time. The complete pipeline will generate a total of 6450 life tables, which will then be stitched together to produce 14 result tables.
 
 ## Final results (life expectancy estimates)
-The life tables generated from the raw data are available for download. 
+The life tables generated from the raw data are available for download and can easily be re-used to produce graphs and tables. 
 
 * [```File 1 - Life expectancy by sex, age, income quartile, level of neighborhood deprivation, and degree of urbanicity```](https://github.com/lucasmorin/income_life_expectancy/blob/master/life_tables/File_1_LifeExpectancy_QuartilesIncome_SocialDeprivation_Urbanicity.csv)
 * [```File 2 - Life expectancy by sex, age, income quartile, and level of neighborhood deprivation```](https://github.com/lucasmorin/income_life_expectancy/blob/master/life_tables/File_2_LifeExpectancy_QuartilesIncome_SocialDeprivation.csv)
