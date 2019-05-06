@@ -31,20 +31,20 @@ The individual-level data that we used for our own study cannot be made publicly
 ## Final results (life expectancy estimates)
 The final results will be posted online shortly. 
 
-* File 1 - LE_quartiles_income_2005-2015_stratified
-* File 2 - LE_quartiles_income_2005-2015_stratified_no_urban
-* File 3 - LE_quartiles_income_2005-2015_nonstratified
-* File 4 - LE_deciles_income_2005-2015_stratified
-* File 5 - LE_deciles_income_2005-2015_nonstratified
-* File 6 - LE_quartiles_income_2005-2015_nonstratified_excluding_no_income
-* File 7 - LE_deciles_income_2005-2015_nonstratified_excluding_no_income
-* File 8 - LE_quartiles_income_2005-2015_nonstratified_raks_summaink
-* File 9 - LE_deciles_income_2005-2015_nonstratified_raks_summaink
-* File 10 - LE_education_2005-2015_stratified
-* File 11 - LE_education_2005_2015_nonstratified
-* File 12 - LE_quartiles_income_and_education_2005-2015_SexAge_income
-* File 13 - LE_quartiles_income_and_education_2005-2015_SexAgeEducation_income
-* File 14 - LE_ventiles_income_2005-2015_NonStratified
+* File 1 - Life expectancy by sex, age, income quartile, level of neighborhood deprivation, and degree of urbanicity
+* File 2 - Life expectancy by sex, age, income quartile, and level of neighborhood deprivation
+* File 3 - Life expectancy by sex, age, and income quartile (main analysis)
+* File 4 - Life expectancy by sex, age, income decile, level of neighborhood deprivation, and degree of urbanicity
+* File 5 - Life expectancy by sex, age, and income decile
+* File 6 - Life expectancy by sex, age, and income quartile (excluding people with negative or no income)
+* File 7 - Life expectancy by sex, age, and income decile (excluding people with negative or no income)
+* File 8 - Life expectancy by sex, age, and income quartile (individual income)
+* File 9 - Life expectancy by sex, age, and income decile (individual income)
+* File 10 - Life expectancy by sex, age, level of education, level of neighborhood deprivation, and degree of urbanicity
+* File 11 - Life expectancy by sex, age, and level of education
+* File 12 - Life expectancy by sex, age, income quartile, and level of education (sex- and age-specific income quartiles)
+* File 13 - Life expectancy by sex, age, income quartile, and level of education (sex-, age and education-specific income quartiles)
+* File 14 - Life expectancy by sex, age, and income ventiles
 
 ## Contact information
 Lucas Morin, Aging Research Center, Karolinska Institutet (lucas.morin@ki.se)
